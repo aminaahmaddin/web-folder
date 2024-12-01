@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// OBJECT
+
+
+// const person ={
+//     name : "amina",
+//     age :23,
+//     color :"normal",
+//     cgpa: 3.8
+// }
+// person["age"] = person["age"] - 1;
+// // person["name"] = "Amina Ahmad";
+// console.log(person.age);
+
+
+
+//  OPERATORS IN JS ;
+
+
+
+// Module   : % (it means that if a divided by b then the reminder of a /b is called the module od a and b.)
+// Exponentiation  : ** (a**b / 2 ki power 2)
+// Increment : a++; (a=a+1);
+// Decrent : * a--; (a=a-1);
+
+
+// ARITHEMITIC OPERATORS
+// we have four types of Arithmetic operators 
+
+// Division  : /
+// Addition  : +
+// Subtraction : - 
+// multiplication : * (it is the sign of Excration in programming language it is used for multiplication)
+
+// EXAMPLE
+
+// let a = 7;
+// let b = 6;
+// console.log(a+b);
+// console.log(a-b);
+// console.log(a*b);
+// console.log(a/b);
+// console.log(a%b);
+// console.log(a**b);
+
+
+
+
+// UNIORY OPERATOR
+    // increment operators : a++
+    // decerement operators : a--
+    // two types of increment and decrement operators
+    // post increment operator : a++
+    // pre increment operator : ++a
+    // post decrement operator : a--
+    // pre decrement operator : --a
+
+// EXAMPLE
+
+// let a = 7;
+// let b = 6;
+// a = a + 1;
+// a++;
+// a--;
+// console.log(a);
+// console.log(a);
+
+
+// ASSIGNMENT OPERATOR
+// =
+// +=
+// -=
+// *=
+// %=
+// **=
+
+// EXAMPLE
+
+// let a = 4;
+// let b = 7;
+// a += 5;
+// b -= 5;
+// a *= 5;
+// b %= 5;
+// a **= 5;
+// console.log(a);
+
+
+//COMPERISON OPERATOR
+
+// EQUAL TO ==
+// EQUAL TO & TYPE ===
+// NOT EQUAL TO !=
+// NOT EQUAL TO & TYPE !===
+
+
+// LOGICAL  OPERATOR 
+// && AND OPERATOR 
+// || OR OPERATOR (in its situation if the condition give any single value is true  then the or operator us output as a true)
+// ! NOT OPERATOR (it shows  that all positive values are false and all negative values are true )
+
+// TERNARY OPERATORS
+// age > 18 ? "adult" : "not an adult";
+
+
+// CONDITIONAL STATEMENT
+    // if 
+    // if else 
+//      let num = prompt("enter a num");
+// if (num % 5 === 0){
+//     console.log( num,"it is a multiple of 5");
+// }
+// else{
+//     console.log( num, "it is not a multiple of 5");
+// }
+
+// let msrks = prompt("Enter a number between (0-100)");
+// let grade;
+// if(msrks >= 90 && msrks <=100){
+//     grade = "A";
+// }else if(msrks >= 70 && msrks <=89){
+//     grade = "B";
+// }else if(msrks >= 60 && msrks <=69){
+//     grade = "C";
+// }else if(msrks >= 50 && msrks <=59){
+//     grade = "D";
+// }else if(msrks >= 0 && msrks <=49){
+//     grade = "F";
+// }
+// console.log(grade);
+
+
+// function callback(){
+//     console.log('this a call back function');
+// }
+// function myfunction(value){
+//     value()
+// }
+// myfunction(callback);\
+
+
+
+// const promise = new Promise((resolve, reject) => {
+//     resolve('yguew')
+// })
+// // console.log(promise);
+// promise.then((res)=>{
+//     console.log(res);
+// }).catch((reject)=>{
+//     console.log(reject);
+// })
+
+// three states
+// pending
+// fullfiled
+// reject
+
+// const promise = fetch('https://fakestoreapi.com/products')
+// promise.then((res)=>{
+//     const data = res.json();
+//     data.then((data)=>{
+//         console.log(data[1]);
+//     })
+// }).catch((err)=>{
+//     console.log(err);
+// }) 
+
+
+
+
+
+// let weekend = 0;
+// switch (weekend) {
+//     case 0:
+//         console.log('Sunday');
+//         break;
+//         case 0:
+//             console.log('Monday');
+//             break;
+//         case 2:
+//             console.log('Tuesday');
+//             break;
+//         case 3:
+//             console.log('Wednesday');
+//             break;
+//         case 4:
+//             console.log('Thursday');
+//             break;
+//         case 5:
+//             console.log('Friday');
+//             break;
+//         default:
+//             console.log('week days can be 0 to 6');
+//             break;
+//         }
+
+        
+      
+// let i = 1;
+// while (i<= 10) {
+//     console.log('13 * ' + i + ' = ' + 13 * i )
+//     i++;
+// }
+        
+
+// let count = prompt('please enter the table count.')
+// let num = prompt('please enter a number for the table count.')
+    
+// let i = 1;
+
+// while (i<=count) {
+//     console.log(`${num} * ${i} = ${num*i}`)
+//     i++
+// }
+     
+
+
+// for (let i = 0; i <= 5; i++) {
+//     console.log(i);
+    
+// }
+
+// let sum = 0;
+// for (let i = 0; i <= 100; i++) {
+//     if (i % 2 == 0) {
+//         console.log("sum is " , sum, i);
+//         sum = sum + 1;
+//     }
+    
+// }
+
+
+// let studentNames = prompt("please enter a name");
+// // let studentNames = [ "amina","kashaf" , "faryal", "amna"];
+// for (let i = 0; i < studentNames.length; i++) {
+//     const element = studentNames[i];
+//     console.log(element);
+    
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+body{
+    padding-left: 450px;
+    padding-right: 450px;
+}
+*{
+    font-family: sans-serif;
+}
+.card h1,.Developer{
+    text-align: center;
+    padding: 30px 0px;
+}
+.cards{
+    width: 1500;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: flex;
+    border: 1px solid #fff;
+    border-radius: 25%;
+}
+img{
+    height: 300px;
+    border-radius: 50%;
+}
+.item{
+    flex-basis: 30%;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 10px 3px lightgrey;
+    text-align: justify;
+    text-align: center;
+    
+}
+button{
+    background-color: #007fff;
+    color:#faebd7;
+}
+    

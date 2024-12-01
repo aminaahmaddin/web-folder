@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="weather-app">
+        <h1>Weather App</h1>
+        <input type="text" id="city-input" placeholder="Enter city name">
+        <button id="get-weather-btn">Get Weather</button>
+        <div id="weather-result">
+            <!-- Weather information will be displayed here -->
+        </div>
+    </div>
+    <script>
+        document.getElementById('get-weather-btn').addEventListener('click', function() {
+            const city = document.getElementById('city-input').value;
+            if (city) {
+                getWeather(city);
+            } else {
+                alert('Please enter a city name');
+            }
+        });
+
+        function getWeather(city) {
+            const apiKey = 'a0e57b337e66ee37cce86cbcb998b265'; // Replace with your OpenWeatherMap API key
+            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+            // `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
+
+            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.cod === 200) {
+                        displayWeather(data);
+                    } else {
+                        alert('City not found');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching weather data:', error);
+                    alert('Error fetching weather data');
+                });
+        }
+
+        function displayWeather(data) {
+            const weatherResult = document.getElementById('weather-result');
+            weatherResult.innerHTML = `
+                <h2>${data.name}, ${data.sys.country}</h2>
+                <p>Temperature: ${data.main.temp}°C</p>
+                <p>Weather: ${data.weather[0].description}</p>
+                <p>Humidity: ${data.main.humidity}%</p>
+                <p>Wind Speed: ${data.wind.speed} m/s</p>
+            `;
+        }
+    </script>
+</body>
+</html>

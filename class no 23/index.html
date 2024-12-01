@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class no 23</title>
+</head>
+<body>
+
+
+<!-- <h1></h1> -->
+    <!-- <button onclick="colorblack()" id="btn">previous</button>
+    <button onclick="next()" id="btn">next</button>  -->
+     <!-- <button onclick="toggleColor()">click me</button>  -->
+      <!-- <select onchange="Color(this.value)">
+      <option value="">Color</option>
+      <option value="black">Black</option>
+      <option value="pink">pink</option>
+      <option value="white">white</option>
+     </select>  -->
+     <!-- <button onmouseover="over()" onmouseout="out()" id="btn">over</button> -->
+  <!-- <p class="para">paragraph 1</p>
+  <p class="para">paragraph 2</p>
+  <p class="para">paragraph 3</p>
+  <p class="para">paragraph 4</p>
+  <p class="para">paragraph 5</p>  -->
+
+ 
+
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const para =document.getElementsByClassName('para')
+// for(let i=0; i < para.length ; i++){
+//   para[i].innerHTML = 'hello'
+// }
+//  const para = document.querySelectorAll('.para')
+//   for(let i=0; i < para.length ; i++){
+//   para[i].innerHTML = 'its a paragraph'
+// }
+
+
+// document.querySelectorAll('.para').forEach((event)=>{
+//   event.innerHTML= 'checking'
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // function over(){
+  //   document.getElementById('btn').style.background ='purple'
+  //   document.getElementById('btn').style.width ='100px'
+  // }
+  // function out(){
+  //   document.getElementById('btn').style.background ='white'
+  //   document.getElementById('btn').style.width ='50px'
+  // }
+// let heading_tag = document.createElement('h1')
+// heading_tag.textContent = 'this is heading'
+
+// console.log(heading_tag);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // function Color(value) {
+  //   document.body.style.backgroundColor = value;
+  //   // console.log(value);
+  // }
+
+
+//         var blackC = false;
+// function toggleColor(){
+//   if(blackC){
+//     document.body.style.backgroundColor = 'white';
+//     document.body.style.color = 'black';
+//   } 
+//   else{
+//     document.body.style.backgroundColor = 'black';
+//     document.body.style.color = 'white';
+//   }
+//   blackC = !blackC;
+// }
+
+//   let color =document.getElementsByTagName('body').style.backgroundColor = 'black'
+// function colorblack(){
+//   document.body.style.backgroundColor = 'black'
+//   document.getElementById('btn').style.backgroundColor = 'pink'
+//   // document.body.style.backgroundColor = 'whaite'
+// }
+
+// function colorblack(){
+  
+//   // document.body.style.backgroundColor = 'whaite'
+// }
+  // document.body.style.backgroundColor = 'whaite'
+
+// function colorblack(){
+//   document.body.style.backgroundColor = 'whaite'
+//   // document.body.style.backgroundColor = 'whaite'
+// }
+
+
+
+
+
+
+
+// let no = document.getElementsByTagName('h1')[0].innerText = 1
+// function previous( ){
+//   no = no-1
+//   document.getElementsByTagName('h1')[0].innerText= no
+//   console.log(no);
+// }
+// function next( ){
+//   no = no+1
+//   document.getElementsByTagName('h1')[0].innerText= no
+//   console.log(no)
+// }
+
+
+// const sentence = prompt("Enter a sentence:");
+// const searchWord = prompt("Enter the word or phrase to search for:");
+// const replaceWord = prompt("Enter the word or phrase to replace it with:");
+// const newSentence = sentence.replace(searchWord, replaceWord);
+// console.log("Updated sentence:", newSentence);
+
+
+// const userInput = prompt("Enter a string:");
+// const rversedString = "";
+// for (const i = userInput.length - 1; i >= 0; i--) {
+//     reversedString += userInput.charAt(i);
+// }
+// console.log("Reversed string:", reversedString);
+
+
+// var userInput = prompt("Enter a string:");
+// var characterInput = prompt("Enter a character to find its index:");
+// var characterToFind = characterInput.charAt(0);
+// var indexOfCharacter = userInput.indexOf(characterToFind);
+// console.log("Index of the first occurrence of '", characterToFind, "' in the string:", indexOfCharacter);
+
+
+// var sentence = prompt("Enter a sentence:");
+// var searchWord = prompt("Enter the word or phrase to search for:");
+// var replaceWord = prompt("Enter the word or phrase to replace it with:");
+// var newSentence = sentence.replace(searchWord, replaceWord);
+// console.log("Updated sentence:", newSentence);
+
+
+
+// const userInput = prompt("Enter a sentence:");
+// const words = userInput.split(" ");
+// const wordCount = words.length;
+// console.log("Number of words in the sentence:", wordCount);
+
+// const userInput = prompt("Enter a string:");
+// const startIndexInput = prompt("Enter the start index:");
+// const endIndexInput = prompt("Enter the end index:");
+// const startIndex = parseInt(startIndexInput);
+// const endIndex = parseInt(endIndexInput);
+// const substring = userInput.substring(startIndex, endIndex);
+// console.log("Substring between index", startIndex, "and", endIndex,"", substring);
+
+
+// Prompting user for a string
+// Prompting user for start index
+// Prompting user for end index
+// Converting start and end indices to integers
+// Extracting the substring between the given indices
+// Displaying the extracted substring
+
+
+//     const numbers = [3, 7, 2, 9, 5];
+//   const maxNumber =  Math.max(3, 7, 2, 9, 5);
+//  console.log("The maximum number in the array is:", maxNumber);
+
+
+// const numbers = [3, 7, 2, 9, 5];
+//   minNumber =  Math.min(3, 7, 2, 9, 5);
+// console.log("The maximum number in the array is:", minNumber);
+// const numbers = [1, 2, 3, 4, 5, 6];
+// let sumOfEvens = 0;
+
+// for (let i = 0; i < numbers.length; i++) {
+//   if (numbers[i] % 2 == 0) {
+//     sumOfEvens += numbers[i];
+//   }
+// }
+
+// console.log("The sum of even numbers in the array is:", sumOfEvens);
+// alert(`hello`)
+// const data =prompt (`enter your name`)
+// console.log(data);
+// const string1 = `fatima`
+
+
+// console.log(string1.charAt(3))
+// const string1 = `fatima`
+// const string2 = `amina`
+// console.log(string1.concat(" " , string2));
+// console.log(string1.concat(" " , string2))
+// const data = prompt(`what is your name`)
+// console.log(data)
+// const  string1 = 'Amina'
+// console.log(string1.charAt(4))
+
+
+// const userInput = prompt("Enter a string:");
+// const indexInput = prompt("Enter an index to get the character at that position:");
+// const index = parseInt(indexInput);
+// const character = userInput.charAt(index);
+// console.log("Character at index", index, "is:", character);
+
+
+// Prompting user for a string
+// Prompting user for an index
+// Converting indexInput to integer
+// Getting the character at the specified index
+// Displaying the character at the specified index
+
+
+// // Prompting user for input
+// const userInput = prompt("Enter a string:");
+// // Calculating the length of the input string
+// const length = userInput.length;
+// // Displaying the length of the input string
+// console.log("Length of the input string:", length);
+
+// function add (){
+//   const a = 2
+//   const b = 4
+ //   console.log('Addition', a+b); -->
+  // }
+// for(let i = 0 ; i <5;i++)
+// function add(){
+//   const a = 25
+//   const b = 25
+//   return a+b
+// }
+// let name = 'amina'
+// const addition = add()
+// console.log(addition) --> -->
+
+
+// let myname = 'Amina'
+// let gpa = 'one'
+// // console.log(myname.charAt(4));
+// // console.log(myname.charCodeAt(4));
+// // console.log(myname.concat(myname,gpa));
+// console.log(myname.indexOf('a'));
+// console.log(myname.lastIndexOf("n"));
+
+
+// TODAY'S LECTURE
+
+// function add(num1,num2){
+//   let sum = num1 + num2;
+//   return sum;
+//   // return use for finglr value
+// }
+// let result = add(5,3);
+// console.log(result);
+ 
+
+// FUNCTION
+// 1. argument
+// 2.parameter
+
+// a,b are parameter
+// function Addition(a,b){
+//   // let a = 20;
+//   // let b = 30;
+//   // console.log(a);
+//   // console.log(b);
+//   // return a+b;
+//   if(a===b){
+//     return true
+//   }else{
+//     return false
+//   }
+// }
+// console.log(Addition(20,30));
+// console.log(Addition(40,20));
+
+// THE MAP METHOD RETURNS A NEW ARRAY 
+
+// let Array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// console.log(Array.map(function(numbers){
+//   return numbers += 10;
+// }));
+// // THE forEach METHOD DOES NOT RETURN ANY THING
+// console.log("Existing Array:" + Array);
+// console.log("Result Array:" + Array.forEach
+// (function(values){
+//   return values += 10;
+// }));
+
+
+// let a = 2;
+// let b = 4;
+// let c = a + b;
+// console.log(c);
+
+
+
+// let array2 = [1,2,3,4,5]
+// for(let i=0;i<array2.lehgth;i++){
+//   console.log(array2[0]);
+//   if(array2[i]< array[i+1])
+
+
+  // console.log(array2[1]);
+  // console.log(array2[2]);
+  // console.log(array2[3]);
+  // console.log(array2[4]);
+// } -->
+
+// const num1 = [10, 15, 18, 20, 23];
+// const result = largestNum(num1);
+
+// function largestNum(arr) {
+//     let largestNum = arr[0];
+//     for (let i = 1; i < arr.length; i++) {
+//         if (arr[i] > largestNum) {
+//             largestNum = arr[i];
+//         }
+//     }
+//     return largestNum;
+// }
+
+
+// console.log(result); 
+
+// let name = "Maam";
+// name.reverse()
+// console.log(name);
+// function reverse(name){
+//   const num= name.split('').reverse('').joine('')
+//   console.log(num)
+  
+// }
+// reverse( "Amina")
+
+// let string1 = prompt("Enter a String");
+// let strlength = string1.length;
+// let revestring = '';
+// for(let i = strlength-1; i>=0;i--){
+//   revestring += string1[i];
+// }
+// console.log(`${string1} reverse is ${revestring}`);
+
+
+
+// let str = prompt("enter astring");
+// let stlength = str.length;
+// let revstr = '';
+// for(let i =stlength-1;i>=0;i--){
+//   revstr += str[i];
+
+// }
+// console.log(`${revstr}`);
+  
+
+
+// let a = [1,2,3,4,5,6,7,8,9,10];
+// for(a = 1; a <=10;a++){
+//   if(a % 2 == 0){
+//     console.log(a)
+//   }
+// }
+
+
+// FACTORIAL OF A NUMBER
+
+
+// function factor(n){
+//   if(n==0){
+//     return 1;
+//   }
+//   else{
+//     return factor(n-1) * n
+//   }
+// }
+// console.log(factor(5));
+
+
+
+// const array1 = [1,5,7,9];
+// const array2 = [4,6,8,10];
+// const mergeSortedArrays = (array1,array2) => {
+//   return [...array1,...array2].sort((a,b)=>a-b)
+// }
+// console.log(mergeSortedArrays(array1,array2));
+
+
+
+
+// const arr = [1, 2, 2, 3, 4, 4, 5];
+// const newarr = new Set(arr);
+// const newarr2 = [...newarr];
+// console.log(newarr2);
+
+
+// const arr = [1, 2, 2, 3, 4, 2, 5, 2];
+// const element = 2;
+// console.log(countFrequency(arr, element)); // Output: 4
+
+
+
+
+// 1 Check if an Element is Present in an Array
+// using JavaScript ?
+
+
+// let array = [1,2,3,4,5,6];
+// console.log(array.indexOf(3));
+
+
+// const array = [1,2,3,4,5,6,7]
+// console.log(array.reverse(array));
+
+
+
+
+
+
+
+
+
+// 2 JavaScript Program to Swap First and Last
+// Elements in an Array ?
+
+// const swap =(array)=>{
+          
+//   [array[0],array[array.length-1]] =
+//    [array[array.length-1],array[0]]
+//   return array;
+
+// }
+// let a = [1,2,3,4,5,6];
+// // let b = [2,4,6,8]
+// const data = a.splice(4);
+// console.log(data);
+// // console.log(swap([1,2,3,4,5,6]));
+
+
+
+
+
+// 3 JavaScript Program to Delete Middle Element
+// from an Array ?
+
+
+
+// function deleteMiddleElement(arr) {
+//   const middleIndex = Math.floor(arr.length / 2);
+//   arr.splice(middleIndex, 1);
+//   return arr;
+// }
+
+// let myArray = [1, 2, 3, 4, 5];
+// console.log(deleteMiddleElement(myArray));
+
+
+
+
+
+// 4 Copy Array Items into Another Array in
+// JavaScript:
+
+// let array1 =[1,2,3,4,5,6]
+// let array2 = array1.slice()
+// let array3 = [...array1]
+
+
+// console.log(array1);
+// console.log(array2);
+// console.log(array3);
+
+
+
+
+
+// 6 JavaScript Program to Find the Largest
+// Three Elements in an Array:
+// let array = [3, 1, 5, 2, 4];
+// console.log(largestThree(array)); // Output:
+// [5, 4, 3]
+
+
+
+// let array =[3,1,5,2,4]; document.body.style.backgroundcolor = 'whaite'
+    // document.body.style.color = 'black'
+//  function largeno(array){
+//   return array.sort((a,b) =>b-a).slice(0,3);
+//  }
+
+// console.log(largeno(array));
+
+
+
+// class person  {
+//    constructor(name,age,height,color){
+//     this.name=name,
+//     this.age = age,
+//     this.height=height,
+//     this.color=color
+//    }
+// }
+// const first_person = new person('kashaf',19,5.3,'fair');
+// console.log(first_person);
+// // first_person.weight = 50
+// // console.log(first_person)
+// first_person.prototype.weight = 50
+// console.log(first_person)
+
+// let Car = {
+//       constructor(name,model,color,speed){
+//   Car.name = name,
+//    Car.model =model ,
+//     Car.color =color,
+//     Car.speed = speed
+// }
+//    }
+// let Car1 = good('toyota',2024,'black',400);
+
+// console.log(Car1);
+// console.log(Car.model);
+// console.log(Car.color);
+// console.log(Car.speed);
+// car.color = "black";
+// for(let property in Car){
+//     console.log('${property}:${Car[property]}');
+// }
+// let car = "black";
+// //  {
+// //     name:"bmw",
+// //     model:2024,
+// //     color:"black",
+// //     speed:400,
+// //     newcar: function(){
+// //         return this.name +""+this.speed;
+// //     }
+// // }
+// console.log(car);
+
+// Create an object named car
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

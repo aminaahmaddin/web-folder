@@ -1,0 +1,16 @@
+h1{
+    background-color: aqua;
+    margin: 20px;
+    padding: 20px;
+
+}
+a:visited{
+    color: aqua;
+}
+.btn:active{
+     background-color: blueviolet;
+}
+.box{
+    max-width:1000px ;
+    max-height: 1000px;
+}

@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #fefbfb;
+}
+.mobile_frame{
+    border: 10px solid #000;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.weather-app{
+    height: 600px;
+    width: 300px;
+    background-color: #313745;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh 30vh;
+    border-radius: 40px;
+    border: 8px solid #000;
+    box-shadow: 4px 4px 4px 4px rgb(87, 83, 83);
+}
+.weather-app i{
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+
+}
+.location .heading{
+    color: #fff;
+    font-family: cursive;
+    font-size: 30px;
+    font-weight: 40;
+    padding: 0px 70px;
+}
+.location .time_date{
+    color: #fff;
+    font-family: cursive;
+    font-size: 15px;
+    padding: 0px 70px;
+    margin: 3px;
+
+}
+.temp #clouds{
+    padding: 0.5rem 5rem;
+    height: 0%;
+}
+.temp .day{
+    color: #fff;
+    font-size: 40px;
+    font-family: cursive;
+    padding: 0rem 6rem;
+}
+.temp .morning{
+    color: #fff;
+    font-family: cursive;
+    font-size: 14px;
+    padding-left: 6.2rem;
+    padding-bottom: 2px;
+}
+.temp .name{
+    color: #fff;
+    font-family: cursive;
+    font-size: 14px;
+    padding-left: 7.2rem;
+    padding-bottom: 20px;
+}
+ hr{
+    margin-left: 130px;
+    margin-right: 130px;
+ }
+ .condition{
+    /* background-color: aqua; */
+    display: flex;
+    padding-top: 50px;
+
+ }
+ .sunset{
+margin-left: 30px;
+font-size: 10px;
+font-family: cursive;
+color: #fff;
+justify-content: center;
+align-items: center;
+text-align: center;
+ }
+ .sunset img{
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 5px;
+    /* color: #fff; */
+ }
+ .temprature{
+    margin-left: 30px;
+    font-size: 10px;
+    font-family: cursive;
+    color: #fff;
+justify-content: center;
+align-items: center;
+text-align: center;
+ }
+ .temprature img{
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 5px;
+ }
+
+ .wind{
+    margin-left: 30px;
+    font-size: 10px;
+    font-family: cursive;
+    color: #fff;
+justify-content: center;
+align-items: center;
+text-align: center;
+ }
+ .wind img{
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 5px;
+ }
+ 
+ 

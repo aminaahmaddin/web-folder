@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggle button</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="toggle_btn">
+    <span class="switch" onclick="Color()"></span>
+    <!-- <img src="" alt=""> -->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".switch").on("click", function() {
+        $(".toggle_btn").toggleClass("active");
+        })
+    })
+    // function color(){
+    //     document.body.style.background = 'orange'
+    // }
+    var blackC = false;
+function Color(){
+  if(blackC){
+    document.body.style.backgroundColor = '#474747';
+    document.body.style.color = '#ffe0ba';
+  } 
+  else{
+    document.body.style.backgroundColor = '#ffe0ba';
+    document.body.style.color = '#474747';
+  }
+  blackC = !blackC;
+}
+    // sty
+</script>
+</html>

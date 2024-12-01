@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amina Ahmad Din - Resume</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .scroll-top-btn {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      display: none;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+    <!-- Header -->
+    <header class="text-center mb-6">
+      <h1 class="text-3xl font-bold text-gray-900">Amina Ahmad Din</h1>
+      <p class="text-gray-600">Email: <a href="mailto:aminaahmaddin.246@gmail.com" class="text-blue-500">aminaahmaddin.246@gmail.com</a></p>
+      <p class="text-gray-600">Phone: +92 337 7106176</p>
+      <p class="text-gray-600">
+        GitHub: <a href="https://github.com/aminaahmad" target="_blank" class="text-blue-500">github.com/aminaahmad</a> |
+        LinkedIn: <a href="https://linkedin.com/in/aminaahmad" target="_blank" class="text-blue-500">linkedin.com/in/aminaahmad</a>
+      </p>
+    </header>
+
+    <!-- Objective -->
+    <section class="mb-6">
+      <h2 class="text-2xl font-bold text-gray-900 mb-2">Objective</h2>
+      <p>
+        Aspiring Web and Mobile App Developer eager to leverage technical skills in HTML, CSS, JavaScript, React.js, and MongoDB to contribute to innovative projects. Passionate about continuous learning and creating impactful applications.
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section class="mb-6">
+      <h2 class="text-2xl font-bold text-gray-900 mb-2">Education</h2>
+      <p class="font-semibold">Saylani Mass I.T. Training Program</p>
+      <p>Web and Mobile App Development (In Progress)</p>
+      <ul class="list-disc ml-6">
+        <li>Learning HTML, CSS, JavaScript, React.js</li>
+        <li>Currently exploring backend development with MongoDB</li>
+      </ul>
+    </section>
+
+    <!-- Skills -->
+    <section class="mb-6">
+      <h2 class="text-2xl font-bold text-gray-900 mb-2">Skills</h2>
+      <ul class="list-disc ml-6">
+        <li><strong>Frontend Development:</strong> HTML, CSS, JavaScript, React.js, Tailwind CSS, Bootstrap</li>
+        <li><strong>Backend Development:</strong> MongoDB (beginner level)</li>
+        <li><strong>Tools:</strong> Git, Visual Studio Code</li>
+        <li><strong>Other Skills:</strong> Problem-solving, teamwork, adaptability</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section class="mb-6">
+      <h2 class="text-2xl font-bold text-gray-900 mb-2">Projects</h2>
+      <ul class="list-disc ml-6">
+        <li>
+          <strong>Portfolio Website:</strong> Designed and developed a responsive portfolio using HTML, CSS, and JavaScript.  
+          Hosted on GitHub Pages: <a href="https://github.com/aminaahmad/portfolio" target="_blank" class="text-blue-500">Portfolio Link</a>
+        </li>
+        <li>
+          <strong>To-Do List App:</strong> Built a functional React.js to-do list application to manage tasks efficiently.  
+          Features include task addition, deletion, and filtering.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Languages -->
+    <section>
+      <h2 class="text-2xl font-bold text-gray-900 mb-2">Languages</h2>
+      <ul class="list-disc ml-6">
+        <li>English (Proficient)</li>
+        <li>Urdu (Native)</li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- Scroll to Top Button -->
+  <button id="scroll-top-btn" class="scroll-top-btn">↑</button>
+
+  <!-- JavaScript for Scroll to Top Button -->
+  <script>
+    // Get the button
+    const mybutton = document.getElementById("scroll-top-btn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    };
+
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.onclick = function () {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    };
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+      <div class="weather-app">
+       <div class="container">
+        <h3 class="brand">the weather</h3>
+        <div>
+            <h1 class="temp">16&#176;</h1>
+            <div class="city-time">
+                <h1 class="name">London</h1>
+                <small>
+                   <span class="time">06:09</span>
+
+                   <span class="date">Monday July 15</span>
+                   </small>
+                   </div>
+                   <div class="weather">
+                    <img src="./icons8-sun-48.png" 
+                    class="icon"
+                    alt="icon"
+                    width="50"
+                    height="50"/>
+                    <span class="condition">Cloudy</span>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="panel">
+                        <form id="locationInput">
+                            <input type="text"
+                            class="search"
+                            placeholder="search Location..."/>
+                            <button type="submit" class="submit">
+                                <i class="fa fa-search"></i>
+                                </button>
+                                </form>
+
+                                <ul class="cities">
+                                    <li class="city">Faisalabad</li>
+                                    <li class="city">Islamabad</li>
+                                    <li class="city">Multan</li>
+                                    </ul>
+
+                                    <ul class="details">
+                                        <h4>Weather Details</h4>
+                                        <li>
+                                            <span>Cloudy</span>
+                                            <span class="cloud">89%</span>
+                                        </li>
+                                        <li>
+                                            <span>Humidity</span>
+                                            <span class="humidity">64%</span>
+                                        </li>
+                                        <li>
+                                            <span>Wind</span>
+                                            <span class="wind">8km/h</span>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                    </div>
+
+
+
+
+
+<script src="./script3.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style3.css">
+</head>
+<body>
+    <div class="weather-app">
+        <h1>Weather App</h1>
+        <form class="location">
+            <input type="text" class="search" placeholder="Enter city name">
+            <button class="submit" type="submit">Get Weather</button>
+        </form>
+        <div class="city-buttons">
+            <button class="city1">Lahore</button>
+            <button class="city">Islamabad</button>
+            <button class="city">Multan</button>
+        </div>
+        <div id="weather-result">
+            <div class="name">Faisalabad</div>
+            <div class="temp">16°</div>
+            <div class="time">06:09-
+            <div class="date"> Monday-July 15</div></div>
+            <div class="cloud"></div>
+            <div class="humidity"></div>
+            <div class="wind"></div>
+            <div class="icon"><img src="./icons8-cloud-48.png" alt="Weather Icon"></div>
+            <div class="condition">Cloudy</div>
+            
+        </div>
+    </div>
+    <script>
+        const app = document.querySelector('.weather-app');
+        const temp = document.querySelector('.temp');
+        const dateOutput = document.querySelector('.date');
+        const timeOutput = document.querySelector('.time');
+        const conditionOutput = document.querySelector('.condition');
+        const nameOutput = document.querySelector('.name');
+        const icon = document.querySelector('.icon img');
+        const cloudOutput= document.querySelector('.cloud');
+        const humidityOutput = document.querySelector('.humidity');
+        const windOutput = document.querySelector('.wind');
+        const form = document.querySelector('.location');
+        const search = document.querySelector('.search');
+        const btn = document.querySelector('.submit');
+        const cities = document.querySelectorAll('.city');
+
+        // default city when page loads
+        let cityInput = "Faisalabad";
+        const apiKey = 'a0e57b337e66ee37cce86cbcb998b265'; // Replace with your OpenWeatherMap API key
+
+        // add click event to each city in the panel
+        cities.forEach((city) => {
+            city.addEventListener('click', (e) => {
+                cityInput = e.target.innerHTML;
+                fetchWeatherData();
+                app.style.opacity = "0";
+            });
+        });
+
+        form.addEventListener('submit', (e) => {
+            if (search.value.length === 0) {
+                alert('Please type in a city name');
+            } else {
+                cityInput = search.value;
+                fetchWeatherData();
+                search.value = "";
+                app.style.opacity = "0";
+            }
+            e.preventDefault();
+        });
+
+        function dayOfTheWeek(day, month, year) {
+            const weekday = [
+                "Sunday",
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+            ];
+            return weekday[new Date(`${year}-${month}-${day}`).getDay()];
+        }
+
+        function fetchWeatherData() {
+            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityInput}&appid=${apiKey}&units=metric`)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+
+                    temp.innerHTML = data.main.temp + "&#176;C";
+                    conditionOutput.innerHTML = data.weather[0].description;
+
+                    const localtime = new Date();
+                    const y = localtime.getFullYear();
+                    const m = localtime.getMonth() + 1;
+                    const d = localtime.getDate();
+                    const time = localtime.toLocaleTimeString();
+
+                    dateOutput.innerHTML = `${dayOfTheWeek(d, m, y)}, ${d}/${m}/${y}`;
+                    timeOutput.innerHTML = time;
+
+                    nameOutput.innerHTML = data.name;
+                    const iconId = data.weather[0].icon;
+                    icon.src = `http://openweathermap.org/img/wn/${iconId}@2x.png`;
+
+                    cloudOutput.innerHTML = `Cloud: ${data.clouds.all}%`;
+                    humidityOutput.innerHTML = `Humidity: ${data.main.humidity}%`;
+                    windOutput.innerHTML = `Wind: ${data.wind.speed} m/s`;
+
+                    let timeOfDay = "day";
+                    const code = data.weather[0].id;
+
+                    if (localtime.getHours() >= 18 || localtime.getHours() < 6) {
+                        timeOfDay = "night";
+                    }
+
+                    if (code >= 200 && code < 300) {
+                        // Thunderstorm
+                        app.style.backgroundImage = `url('./images/${timeOfDay}/task no 22/Storm.jpg')`;
+                    } else if (code >= 300 && code < 600) {
+                        // Rain
+                        app.style.backgroundImage = `url('./images/${timeOfDay}/task no 22/Calm Rain Sounds.jpg')`;
+                    } else if (code >= 600 && code < 700) {
+                        // Snow
+                        app.style.backgroundImage = `url('./images/${timeOfDay}/task no 22/♥.jpg')`;
+                    } else if (code >= 700 && code < 800) {
+                        // Atmosphere
+                        app.style.backgroundImage = `url('./images/${timeOfDay}/task no 22/Mist - Fog.jpg')`;
+                    } else if (code === 800) {
+                        // Clear
+                        app.style.backgroundImage = `url('./images/${timeOfDay}/task no 22/download (30).jpg')`;
+                    } else if (code > 800) {
+                        // Cloudy
+                        app.style.backgroundImage = `url('./images/${timeOfDay}/task no 22/Black Asphalt Road Wallpaper.jpg')`;
+                    }
+
+                    app.style.opacity = "1";
+                })
+                .catch(() => {
+                    alert('City not found, please try again');
+                    app.style.opacity = "1";
+                });
+        }
+
+        fetchWeatherData();
+        app.style.opacity = "1";
+    </script>
+</body>
+</html>

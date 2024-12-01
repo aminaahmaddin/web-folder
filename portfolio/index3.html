@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-black text-white py-4 px-8">
+        <nav class="flex justify-between items-center">
+            <h1 class="text-3xl font-bold">My Project</h1>
+            <button id="theme-toggle" class="p-2 rounded bg-ffc200 text-black font-semibold">
+                Toggle Theme
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main class="py-8 px-6 md:px-12">
+        <section class="max-w-screen-xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-black mb-8">Project Overview</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-black mb-4">About the Project</h3>
+                    <p class="text-gray-700">
+                        This is a brief overview of the project. It outlines the goals and objectives of the project, the technologies used, and the expected outcomes. The project aims to solve real-world problems with creative and innovative solutions.
+                    </p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-black mb-4">Technologies Used</h3>
+                    <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Tailwind CSS</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-4">
+        <div class="text-center">
+            <p>&copy; 2024 My Project. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const themeToggleButton = document.getElementById('theme-toggle');
+        themeToggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('bg-black');
+            document.body.classList.toggle('text-white');
+            document.querySelector('header').classList.toggle('bg-black');
+            document.querySelector('footer').classList.toggle('bg-black');
+            document.querySelector('header').classList.toggle('text-white');
+            document.querySelector('footer').classList.toggle('text-white');
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+<!-- <button id="btn">Click me</button>
+<input type="text" id="first"> -->
+<!-- <button id="btn">Stop</button> -->
+ <!-- <div id="clock"></div> -->
+   <!-- <div id="heading">
+    <h1>Hello</h1>
+    <h2>world</h2>
+   </div> -->
+
+<script>
+var counter = 0
+let count = ()=>{
+  counter = counter+1
+  console.log(counter);
+}
+const interval =setInterval(
+  ()=>{
+    count()
+    if(counter === 5){
+      clearInterval(interval)
+    }
+  },1000)
+
+
+
+
+
+
+// const  heading1 = document.createElement("h1");
+// const node = document.createTextNode("Hello World!");
+// heading1.appendChild(node);
+// const heading2 = document.getElementById("heading");
+// heading2.appendChild(heading1);
+
+
+
+
+
+
+
+// let time =()=>{
+//   const timee =new Date()
+//   document.getElementsById("clock").innerText=timee.toLocaleTimeString()
+// }
+// setInterval(time,1000)
+
+
+
+
+
+
+
+
+
+  // const data = setInterval(function(){
+  //   console.log("Hello")
+  // },2000)
+  // document.getElementById('btn').addEventListener('click',()=>{clearInterval(data)})
+
+
+
+
+
+
+
+
+
+
+    const date = new Date();
+    
+    // console.log(date);
+    const hours = date.getHours();
+    // const minutes = date.getMinutes();
+    // const second = date.getSeconds();
+    // console.log('${hours}:${minutes}:${second}')
+    // console.log();
+    console.log(date.getHours());
+
+
+
+
+
+
+
+  //  document.getElementById('btn').addEventListener('click', ()=>{
+  //   console.log('you click me');
+  //  }) 
+  //  document.getElementById('first').addEventListener('change', (e)=>{ 
+  //   console.log(e.target.value);
+  //  })
+</script>
+</body>
+</html>

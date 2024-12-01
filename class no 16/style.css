@@ -1,0 +1,104 @@
+ .parent{
+    /* background-color: aquamarine; 
+     height: 100px;
+    width: 100px; */
+}
+.first{
+    /* background-color: blueviolet;
+    /* transform: translate(50px 30px); */
+    /* transform: rotate(3deg); */
+    /* transition-delay: 1s;
+    transition-duration: 2s; */
+}
+     /* The animation code */
+
+/*    
+    from {background-color: #000000;}
+    to {background-color: #00aae8;} */
+  
+body{
+    background-color: #000000;
+    display: flex;
+}
+/* from {background-color: red;}
+to {background-color: yellow;} */
+
+   
+.img1{
+    border: 5px solid #298cae;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+     display: flex;
+        width: 100px;
+        height: 100px;
+        background: #0000;
+        color: #00aae8;
+     transition: width,height;
+     transition-duration: 2s;
+} 
+.img1 :hover{
+    width: 100px;
+    height: 100px;
+    background: #00aae8;
+    color: white;
+}
+     
+img{
+    width: 6rem;
+    height: 6rem;
+    color: #00aae8;
+
+    /* from {background-color: #00aae8;}
+    /* to {background-color: #8bd2eb;}*/ 
+    /* background: #00aae8;
+    transition-property:  width,height,color;
+    transition-duration: 2s,2s,2s;  */
+}
+img:hover{
+   width: 6rem;
+    height: 6rem;
+     color: #fafdfd;
+}
+.facebook{
+    /* display: flex;
+ margin: 10px;
+ border: 0.3rem solid #2f4d7b;
+ transition: 0.2s;
+ color: #fbfdfd;
+}
+.no1{
+    height: 7rem;
+   
+    transition-property: width, height, background, color;
+   transition-duration: 2s, 2s, 2s, 2s;
+background-color: #000;
+}
+.no1:hover{
+    height: 4rem;
+    background-color: #395792;  */
+ 
+}
+.instagram{
+    /* height: 7rem;
+    width: 7rem;
+     display: flex;
+ margin: 10px;
+ border: 0.3rem solid #ca4233;
+ transition: 0.2s;
+}
+.no4{
+ height: 5rem;
+ margin: auto;
+ padding-top: 1rem;
+ padding-left: 1rem;
+ padding-right: 1rem;
+ padding-bottom: 1rem; 
+ transition-property: width, height, background;
+ transition-duration: 2s, 2s, 2s;
+ background-color: #000;
+}
+.no4:hover{
+ height: 4rem;
+ background-color: #ca4233; */
+}

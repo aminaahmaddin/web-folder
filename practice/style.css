@@ -1,0 +1,30 @@
+div {
+    /* width: 100px;
+    height: 100px;
+    margin: 50px;
+    background-color: rgb(38, 169, 212);
+    border: 1px solid black; */
+  /* transform: skewy(20deg); */
+  /* transform: matrix(1, -0.3, 0, 1, 0, 0); */
+  /* transform: scaleY(3); */
+  /* transform: scaleX(0.5); */
+  /* transform: translate(50px, 100px); */
+  /* transform: rotate(20deg); */
+  /* transform: rotate(-20deg); */
+  /* transform: rotateX(150deg); */
+  /* transform: rotateY(150deg); */
+  /* transform: rotateZ(90deg); */
+  }
+  @keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+  
+  /* The element to apply the animation to */
+  div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+  }

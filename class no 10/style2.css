@@ -1,0 +1,26 @@
+body{
+    background-color: lightpink;
+  
+}
+table{
+    background-color: rgb(226, 136, 136);
+    align-items: center;
+}
+a{
+    color: black;
+}
+.class{
+    color: mediumpurple;
+}
+img{ 
+    border-radius: 70%;
+}
+th{
+    color: white;
+    background-color: black;
+}
+button{
+    border-radius: 40%;
+    color: white;
+    background-color: lightseagreen;
+}

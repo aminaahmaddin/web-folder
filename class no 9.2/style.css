@@ -1,0 +1,42 @@
+body{
+    background-color: lightpink;  
+}
+.table{
+    align-items: center;
+}
+table{
+    border-collapse: collapse;
+    background-color: #fff;
+    
+}
+table th{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 4px 30px 4px 8px;
+}
+table td{ 
+    border: 1px solid #e3e3e3;         
+   /* background-color: white;*/
+    /*text-align: center;*/
+    padding: 4px 8px;
+}
+a{
+    color: black;
+}
+.class{
+    color: mediumpurple;
+}
+img{ 
+    border-radius: 70%;
+    height: 50px;
+}
+th{
+    color: white;
+    background-color: black;
+}
+button{
+    border-radius: 40%;
+    color: white;
+    background-color: lightseagreen;
+}
